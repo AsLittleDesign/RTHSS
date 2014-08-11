@@ -2,7 +2,14 @@
 .navbar {
 	min-height: 65px;
 	border: none;
+	border-bottom: 5px solid #323232;
 	border-radius: 0;
+	margin: 0;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	box-shadow: 0px 2px 2px rgba(0,0,0,.8);
 }
 
 .navbar-brand {
@@ -18,6 +25,46 @@
 	background-color: #232323;
 }
 
+.navbar-default .navbar-nav>li>a {
+	color: #eaeaea;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #d94133;
+	-webkit-transition: all i;
+}
+
 .navbar-nav>li>a {
 	line-height: 35px;
+}
+
+.background {
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	background-image: url('/assets/img/background.png');
+	background-position: center;
+}
+
+.darken {
+	background-color: rgba(0,0,0,.7);
+	width: 100%;
+	height: 100%;
+	color: #fff !important;
+	display: table;
+}
+
+.darken small {
+	color: #fff !important;
+}
+
+.center-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.section {
+	padding: 150px 0;
 }
